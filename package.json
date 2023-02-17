@@ -2,7 +2,7 @@
   "name": "host",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run build --output public",
+    "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=8080 npx serve",
     "start": "webpack serve --open --mode development",
