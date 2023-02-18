@@ -4,7 +4,6 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "./",
   },
 
   resolve: {
@@ -44,7 +43,7 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        remote: "remote@https://webpack-remote.vercel.app/remoteEntry.js"
+        remote: "remote@http://localhost:3000/remoteEntry.js"
       },
       exposes: {},
       shared: {
