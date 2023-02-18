@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Counter from "remote/Counter";
+import Sidebar from "remote/Sidebar";
+import Footer from "remote/Footer";
 
 import "./index.scss";
 
 const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <h3>Host</h3>
-    <Counter />
+  <div>
+    <Sidebar />
+    <main>
+      <h3>Host</h3>
+    </main>
+    <Footer />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
