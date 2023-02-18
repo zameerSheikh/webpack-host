@@ -44,7 +44,7 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        remote: "https://webpack-remote.vercel.app/remoteEntry.js"
+        remote: "remote@https://main--frolicking-medovik-c27d6d.netlify.app/remoteEntry.js"
       },
       exposes: {},
       shared: {
