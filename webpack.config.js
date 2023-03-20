@@ -43,7 +43,8 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        remote: "remote@https://webpack-remote.vercel.app/remoteEntry.js"
+        reactRemote: "remote@https://webpack-remote.vercel.app/remoteEntry.js",
+        vueRemote: "vueApp@https://webpack-remote-vue.vercel.app/remoteEntry.js"
       },
       exposes: {},
       shared: {

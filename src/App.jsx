@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-import Sidebar from "remote/Sidebar";
-import Footer from "remote/Footer";
-import Dashboard from "remote/Dashboard";
+import Sidebar from "reactRemote/Sidebar";
+import Footer from "reactRemote/Footer";
+import Dashboard from "reactRemote/Dashboard";
 
 import "./index.scss";
 import "./App.css";
@@ -21,7 +21,7 @@ const App = () => (
         <main>
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/employees" element={<Profile />} />
               <Route path="/messages" element={<Messages />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/about" element={<About />} />
